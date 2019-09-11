@@ -2,7 +2,7 @@ import hudson.model.*
 import hudson.*
 import java.util.concurrent.CancellationException
 
-mavenJob('my-mvn-job-script-file') {
+mavenJob('my-mvn-job') {
     logRotator(-1, 10)
     jdk('localJDK')
     scm {
