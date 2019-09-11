@@ -1,7 +1,9 @@
 String agent_name = 'your agent name'
-//groovy script you want executed on an agent
-groovy_script = '''
+println agent_name
+println "Print Trial"
+println 'Print Trial Again'
 println System.getenv("PATH")
+println "Print Trial And Again"
 println "uname -a".execute().text
 '''.trim()
  
