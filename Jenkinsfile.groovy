@@ -1,3 +1,7 @@
+import hudson.model.*
+import jenkins.model.*
+
+
 mavenJob('my-mvn-job-pL') {
     logRotator(-1, 10)
     jdk('localJDK')
