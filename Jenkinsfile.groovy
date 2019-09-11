@@ -1,3 +1,7 @@
+import hudson.model.*
+import hudson.*
+import java.util.concurrent.CancellationException
+
 mavenJob('my-mvn-job-pL') {
     logRotator(-1, 10)
     jdk('localJDK')
