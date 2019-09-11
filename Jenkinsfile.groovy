@@ -1,4 +1,4 @@
-mavenJob('my-mvn-job') {
+mavenJob('my-mvn-job-pL') {
     logRotator(-1, 10)
     jdk('localJDK')
     scm {
