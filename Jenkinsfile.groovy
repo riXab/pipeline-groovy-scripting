@@ -1,5 +1,5 @@
 import hudson.model.*
-import hudson.*
+import hudson.plugins.*
 import java.util.concurrent.CancellationException
 
 mavenJob('my-mvn-job') {
