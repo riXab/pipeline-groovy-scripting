@@ -4,4 +4,4 @@ println "Print Trial"
 println 'Print Trial Again'
 println System.getenv("PATH")
 println "Print Trial And Again"
-println "uname -a".execute().text 
+println System.getenv("JAVA_HOME")
