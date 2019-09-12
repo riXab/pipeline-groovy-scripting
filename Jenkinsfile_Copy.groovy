@@ -1,4 +1,4 @@
-node mavenJob('my-mvn-job-grooved') {
+def mavenJob('my-mvn-job-grooved') {
     logRotator(-1, 10)
     jdk('localJDK')
     scm {
@@ -16,3 +16,5 @@ node mavenJob('my-mvn-job-grooved') {
 		
     }
 }
+
+return this
