@@ -20,7 +20,7 @@ def example1() {
 			//}
 			build: 'mvn clean package'
 		//	publishers {
-			archiveArtifacts('**/*.war')
+			archiveArtifacts('**/*')
 			//	checkstyle('')
 				
 			//}
