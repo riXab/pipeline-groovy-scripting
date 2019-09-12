@@ -3,9 +3,13 @@ def example1() {
   println 'Starting 1st job'
 			//logRotator(-1, 10)
 			git url: "https://github.com/riXab/groovy-pipeline-scripting.git"
-			jdk('localJDK')
+			
+			//jdk('localJDK')
 			jdk('C:/Program Files/Java/jdk1.8.0_172')
-			maven('localMaven')
+			//withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
+			//	sh 'mvn -B verify'
+			//}
+			maven('C:/Users/rishasha/Documents/Workspace/apache-maven-3.3.9')
 			//scm {
 			//	github('riXab/pipeline-groovy-scripting', 'master')
 			//}
@@ -14,12 +18,12 @@ def example1() {
 			//	scmpoll_spec('* * * * *')
 			//  }
 			//}
-			goals('clean package')
-			publishers {
-				archiveArtifacts('**/*.war')
-				checkstyle('')
+			bat script: 'mvn clean package'
+		//	publishers {
+			archiveArtifacts('**/*.war')
+			//	checkstyle('')
 				
-			}
+			//}
 		
 		
 }
