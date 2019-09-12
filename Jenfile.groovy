@@ -4,9 +4,9 @@ def example1() {
 			//logRotator(-1, 10)
 			jdk('localJDK')
 			maven('localMaven')
-			scm {
-				github('riXab/pipeline-groovy-scripting', 'master')
-			}
+			//scm {
+			//	github('riXab/pipeline-groovy-scripting', 'master')
+			//}
 			triggers {
 			  pollSCM{
 				scmpoll_spec('* * * * *')
