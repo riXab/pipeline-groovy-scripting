@@ -9,7 +9,7 @@ def example1() {
 			//withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
 			//	sh 'mvn -B verify'
 			//}
-			maven('C:/Users/rishasha/Documents/Workspace/apache-maven-3.3.9')
+			//maven('C:/Users/rishasha/Documents/Workspace/apache-maven-3.3.9')
 			//scm {
 			//	github('riXab/pipeline-groovy-scripting', 'master')
 			//}
