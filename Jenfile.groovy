@@ -4,7 +4,7 @@ def example1() {
 			//logRotator(-1, 10)
 			git url: "git@github.com:riXab/pipeline-groovy-scripting"
 			jdk('localJDK')
-			jdk('C:\Program Files\Java\jdk1.8.0_172')
+			jdk('C:/Program Files/Java/jdk1.8.0_172')
 			maven('localMaven')
 			//scm {
 			//	github('riXab/pipeline-groovy-scripting', 'master')
