@@ -16,4 +16,4 @@ node('master') {
 
 code.example2()
 
-code.mvnJob()
+//code.mvnJob()
