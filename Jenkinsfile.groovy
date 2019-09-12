@@ -1,23 +1,26 @@
 //Trial 2
 def example1() {
   println 'Starting 1st job'
-  logRotator(-1, 10)
-		jdk('localJDK')
-		maven('localMaven')
-		scm {
-			github('riXab/pipeline-groovy-scripting', 'master')
+		job('grv-build-job'){
+			logRotator(-1, 10)
+			jdk('localJDK')
+			maven('localMaven')
+			scm {
+				github('riXab/pipeline-groovy-scripting', 'master')
+			}
+			triggers {
+			  pollSCM{
+				scmpoll_spec('* * * * *')
+			  }
+			}
+			goals('clean package')
+			publishers {
+				archiveArtifacts('**/*.war')
+				checkstyle('')
+				
+			}
 		}
-		triggers {
-		  pollSCM{
-			scmpoll_spec('* * * * *')
-		  }
-		}
-		goals('clean package')
-		publishers {
-			archiveArtifacts('**/*.war')
-			checkstyle('')
-			
-		}
+		
 }
 
 def example2() {
