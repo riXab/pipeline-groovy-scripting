@@ -18,7 +18,7 @@ def example1() {
 			//	scmpoll_spec('* * * * *')
 			//  }
 			//}
-			bat script: 'mvn clean package'
+			build: 'mvn clean package'
 		//	publishers {
 			archiveArtifacts('**/*.war')
 			//	checkstyle('')
