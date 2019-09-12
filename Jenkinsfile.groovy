@@ -7,4 +7,8 @@ def example2() {
   println 'Hello from example2'
 }
 
+def checkOutFrom(repo) {
+  git url: "git@github.com:jenkinsci/${repo}"
+}
+
 return this
