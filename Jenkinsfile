@@ -14,6 +14,6 @@ node('master') {
   }
 }
 
-code.exmple2()
+code.example2()
 
 //code.mvnJob()
