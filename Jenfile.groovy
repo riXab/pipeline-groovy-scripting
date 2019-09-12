@@ -2,7 +2,7 @@
 def example1() {
   println 'Starting 1st job'
 			//logRotator(-1, 10)
-			git url: "git@github.com:riXab/pipeline-groovy-scripting"
+			git url: "https://github.com/riXab/groovy-pipeline-scripting.git"
 			jdk('localJDK')
 			jdk('C:/Program Files/Java/jdk1.8.0_172')
 			maven('localMaven')
