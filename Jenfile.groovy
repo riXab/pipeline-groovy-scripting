@@ -1,7 +1,7 @@
 //Trial 2
 def example1() {
   println 'Starting 1st job'
-			logRotator(-1, 10)
+			//logRotator(-1, 10)
 			jdk('localJDK')
 			maven('localMaven')
 			scm {
