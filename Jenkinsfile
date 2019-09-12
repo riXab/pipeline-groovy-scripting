@@ -6,7 +6,7 @@ node('master') {
   //}
 
   stage('Load') {
-    code = load 'Jenkinsfile.groovy'
+    code = load 'Jenfile.groovy'
   }
 
   stage('Execute') {
