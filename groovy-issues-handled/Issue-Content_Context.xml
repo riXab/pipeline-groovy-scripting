@@ -1,0 +1,6 @@
+Issue:Content_Context
+----------------------
+IssueResearch_1:
+	- unable to resolve class jenkins.model.Jenkins(import jenkins.model.Jenkins); 
+	- unable to resolve class hudson.util.RemotingDiagnostics(import hudson.util.RemotingDiagnostics)
+	
