@@ -4,8 +4,8 @@ def example1() {
 			//logRotator(-1, 10)
 			git url: "https://github.com/riXab/groovy-pipeline-scripting.git"
 		//	jdk(localJDK)
-			def jdk = tool 'localJDK'
-			bat "${jdk}\\bin\\java -version"
+			jdk(tool 'localJDK')
+			
 			def mvnHome = tool 'localMaven'
 			bat "${mvnHome}\\bin\\mvn -B verify"
 		}
