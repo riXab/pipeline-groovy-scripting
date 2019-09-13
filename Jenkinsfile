@@ -1,6 +1,7 @@
 def code
 
 node('master') {
+	 input 'Ready to go?'
  stage('Checkout') {
    checkout scm
  }
