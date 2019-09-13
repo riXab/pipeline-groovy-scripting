@@ -13,8 +13,9 @@ def example1() {
 			withEnv(["PATH+MAVEN=${tool 'localMaven'}/bin"]) {
 				bat 'mvn -B verify'
 			}
-			step([$class: 'ArtifactArchiver', artifacts: '**/target/*.jar', fingerprint: true])
-			step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+			//step([$class: 'ArtifactArchiver', artifacts: '**/target/*.jar', fingerprint: true])
+			//step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+			archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
 		}
 
 def example2() {
