@@ -6,7 +6,6 @@ def example1() {
 			def mvnHome = tool 'M3'
 			bat script: "${mvnHome}/bin/mvn -B verify"
 		}
-}
 
 def example2() {
   println 'Hello from example2'
