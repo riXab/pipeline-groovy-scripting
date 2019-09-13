@@ -10,9 +10,10 @@ def example1() {
 			//def mvnHome = tool 'localMaven'
 			//bat "${mvnHome}\\bin\\mvn -B verify"
 			//OR:
-			def mvnHome = tool 'localMaven'
-			env.PATH = "${mvnHome}/bin:${env.PATH}"
+			withEnv(["PATH+MAVEN=${tool 'localMaven'}/bin"]) {
 			bat 'mvn -B verify'
+  }
+			
 		}
 
 def example2() {
