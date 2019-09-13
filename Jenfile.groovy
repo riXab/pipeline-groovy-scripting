@@ -15,7 +15,7 @@ def example1() {
 			}
 			//step([$class: 'ArtifactArchiver', artifacts: '**/target/*.jar', fingerprint: true])
 			//step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
-			archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
+			archiveArtifacts artifacts: '**/*.war', fingerprint: true
 		}
 
 def example2() {
