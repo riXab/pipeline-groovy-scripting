@@ -4,10 +4,10 @@ def example1() {
 			//logRotator(-1, 10)
 			git url: "https://github.com/riXab/groovy-pipeline-scripting.git"
 			
-			def v = version()
-			if (v) {
-				echo "Building version ${v}"
-			}
+			//def v = version()
+			//if (v) {
+			//	echo "Building version ${v}"
+			//}
 
 			def jdk = tool name: 'localJDK'
 			env.JAVA_HOME = "${jdk}"
@@ -32,9 +32,9 @@ def checkOutFrom(repo) {
   git url: "git@github.com:riXab/${repo}"
 }
 
-def version() {
-  def matcher = readFile('pom.xml') =~ '<version>(.+)</version>'
-  matcher ? matcher[0][1] : null
-}
+//def version() {
+//  def matcher = readFile('pom.xml') =~ '<version>(.+)</version>'
+//  matcher ? matcher[0][1] : null
+//}
 
 return this
