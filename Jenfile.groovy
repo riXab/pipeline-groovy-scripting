@@ -9,7 +9,7 @@ def example1() {
 			//withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
 			//	sh 'mvn -B verify'
 			//}
-			maven('C:/Users/rishasha/Documents/Workspace/apache-maven-3.3.9')
+			//maven('C:/Users/rishasha/Documents/Workspace/apache-maven-3.3.9')
 			//scm {
 			//	github('riXab/pipeline-groovy-scripting', 'master')
 			//}
@@ -18,7 +18,7 @@ def example1() {
 			//	scmpoll_spec('* * * * *')
 			//  }
 			//}
-			build: 'mvn clean package'
+			maven('mvn clean package')
 		//	publishers {
 			archiveArtifacts(artifacts:'**/*.war', fingerprint: true)
 			//	checkstyle('')
