@@ -4,7 +4,7 @@ def example1() {
 			//logRotator(-1, 10)
 			git url: "https://github.com/riXab/groovy-pipeline-scripting.git"
 			def mvnHome = tool 'M3'
-			bat script: "${mvnHome}/bin/mvn -B verify"
+			bat "${mvnHome}\\bin\\mvn -B verify"
 		}
 
 def example2() {
